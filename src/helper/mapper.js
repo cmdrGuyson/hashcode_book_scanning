@@ -75,7 +75,7 @@ module.exports = (filename, readStream) => {
     File.libraries = libraries;
     //console.log("File", File);
     //console.log("Lib", libraries);
-    sorter(File);
-    // exporter(filename, selected);
+    let librariesX = sorter(File);
+    exporter(filename, librariesX);
   });
 };

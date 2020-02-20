@@ -21,7 +21,7 @@ rl.question("Input file name ", answer => {
       file = "b_read_on";
       break;
     case "c":
-      file = "c_incunabala";
+      file = "c_incunabula";
       break;
     case "d":
       file = "d_tough_choices";
