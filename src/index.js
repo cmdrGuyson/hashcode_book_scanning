@@ -18,19 +18,19 @@ rl.question("Input file name ", answer => {
       file = "a_example";
       break;
     case "b":
-      file = "b_lovely_landscapes";
+      file = "b_read_on";
       break;
     case "c":
-      file = "c_memorable_moments";
+      file = "c_incunabala";
       break;
     case "d":
-      file = "d_pet_pictures";
+      file = "d_tough_choices";
       break;
     case "e":
-      file = "e_shiny_selfies";
+      file = "e_so_many_books";
       break;
     case "f":
-      file = "small_horizontal";
+      file = "F_libraries_of_the_world";
   }
   let readStream = fs.createReadStream(`../input/${file}.txt`, "utf8");
   mapper(file, readStream);
