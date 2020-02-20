@@ -1,0 +1,11 @@
+{
+  "name": "hashcode2020",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd src && node index.js"
+  },
+  "author": "Guyson, Neith & XP3L",
+  "license": "ISC"
+}
