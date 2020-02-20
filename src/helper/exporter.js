@@ -1,16 +1,17 @@
 const fs = require("fs");
 
-module.exports = (filename, slides) => {
+module.exports = (filename, libraries) => {
   const stream = fs.createWriteStream(`../output/${filename}.out`, {
     flags: "a"
   });
-  stream.write(slides.length + "\n");
-  for (let i = 0; i < slides.length; i++) {
+  stream.write(libraries.length + "\n");
+  console.log(libraries);
+  for (let i = 0; i < libraries.length; i++) {
     let line = [];
-    for (let j = 0; j < slides[i].images.length; j++) {
-      line.push(slides[i].images[j].id);
-    }
+    line.push(libraries[i].libId);
+    line.push(libraries[i].numberOfBooks);
     stream.write(line.join(" ") + "\n");
+    stream.write(libraries[i].books.join(" ") + "\n");
   }
   stream.end();
 };

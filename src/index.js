@@ -30,9 +30,9 @@ rl.question("Input file name ", answer => {
       file = "e_so_many_books";
       break;
     case "f":
-      file = "F_libraries_of_the_world";
+      file = "f_libraries_of_the_world";
   }
   let readStream = fs.createReadStream(`../input/${file}.txt`, "utf8");
-  mapper(readStream);
+  mapper(file, readStream);
   rl.close();
 });
