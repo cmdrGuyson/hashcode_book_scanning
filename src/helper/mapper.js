@@ -53,7 +53,8 @@ module.exports = (filename, readStream) => {
             numberOfBooks: parseInt(lib[0], 10),
             signupTime: parseInt(lib[1], 10),
             booksShippedInOneDay: parseInt(lib[2], 10),
-            books: []
+            books: [],
+            timeToProcess: 0
           };
           libraries.push(library);
           counter++;
