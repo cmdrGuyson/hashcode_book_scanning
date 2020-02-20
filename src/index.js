@@ -33,6 +33,6 @@ rl.question("Input file name ", answer => {
       file = "F_libraries_of_the_world";
   }
   let readStream = fs.createReadStream(`../input/${file}.txt`, "utf8");
-  mapper(file, readStream);
+  mapper(readStream);
   rl.close();
 });
