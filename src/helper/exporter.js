@@ -11,7 +11,12 @@ module.exports = (filename, libraries) => {
     line.push(libraries[i].libId);
     line.push(libraries[i].numberOfBooks);
     stream.write(line.join(" ") + "\n");
-    stream.write(libraries[i].books.join(" ") + "\n");
+    let books = libraries[i].books;
+    let bookLine = [];
+    for (let j = 0; j < books.length; j++) {
+      bookLine.push(books[j].book);
+    }
+    stream.write(bookLine.join(" ") + "\n");
   }
   stream.end();
 };
