@@ -5,11 +5,10 @@ module.exports = (filename, libraries) => {
     flags: "a"
   });
   stream.write(libraries.length + "\n");
-  console.log(libraries);
   for (let i = 0; i < libraries.length; i++) {
     let line = [];
     line.push(libraries[i].libId);
-    line.push(libraries[i].numberOfBooks);
+    line.push(libraries[i].books.length);
     stream.write(line.join(" ") + "\n");
     let books = libraries[i].books;
     let bookLine = [];
