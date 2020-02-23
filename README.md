@@ -17,7 +17,7 @@ an insight that by sorting the libraries according to the sign up time of each i
 
 We did the same for the dataset b_read_on.txt, giving us a score of 5,822,900 points for b. That is the maximum score you could get for that dataset, as all the books have the same score, every library has the same amount of books, the number of books each library can ship in a day is the same, and to add to that, no two libraries have the same book. 
 
-We did the same for the rest of the datasets, and then did some revisions, sorting each library in different methods, to see what would give us a higher score. At the last few minutes, we realized a mistake we made, but couldn't fix it in time. These changes were added later on and increased our score. 
+We did the same for the rest of the datasets, and then did some revisions, sorting each library in different methods, to see what would give us a higher score. 
 
 We first sorted the libraries in ascending order, and then searched through the libraries looking for duplicate books. We left only the unique books, and sorted the books in each library according to their score.
 
